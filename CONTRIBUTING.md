@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://global.media.stux.games/logo.png" height="80" alt="Stux.Games Logo">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.games/logo-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.games/logo-dark.png"><img src="https://global.media.stux.games/logo-dark.png" height="80" alt="Stux.Games Logo"></picture>
 </p>
 
 # Contributing to Stux.Games Games
