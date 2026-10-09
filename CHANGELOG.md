@@ -5,6 +5,12 @@ All notable changes to Stux.Games Games are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).
 
+## v1.0.1
+
+### Fixed
+
+- The footer's copyright line names Stux.Games instead of Stux.Group ("© 2026 Stux.Games. All rights reserved."), matching the brand the site belongs to. The legal pages' statement that the names and logos belong to Stux.Group is unchanged
+
 ## v1.0.0
 
 ### Added
