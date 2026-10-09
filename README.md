@@ -27,6 +27,7 @@ PRESS START, and cartridge-notched cards.
 
 | Game or tool | What it is | Page | Repo |
 |---|---|---|---|
+| Stux.Games | The studio itself: games and the open-source tools behind them | [stux.games](https://stux.games) | private |
 | Stux.Games Status | Live status and uptime history of Stux.Games and its sites | [status.stux.games](https://status.stux.games) | [StuxGames/Status](https://github.com/StuxGames/Status) |
 | Flappie Race | Multiplayer flappy-style racing game, built in Godot (Coming soon) | [gamepage.stux.games](https://gamepage.stux.games) | [StuxGames/FlappieRace](https://github.com/StuxGames/FlappieRace) |
 | MultiPong | Pong rebuilt for playing other people online (Coming soon) | [gamepage.stux.games](https://gamepage.stux.games) | [StuxGames/MultiPong](https://github.com/StuxGames/MultiPong) |

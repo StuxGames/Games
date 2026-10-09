@@ -19,7 +19,7 @@
       <a href="/" class="brand">
         <picture>
           <source srcset="https://global.media.stux.games/icon-light.png" media="(prefers-color-scheme: dark)">
-          <img src="/assets/img/icon.png" width="34" height="34" alt="">
+          <img class="only-dark" src="/assets/img/icon-light.png" width="34" height="34" alt=""><img class="only-light" src="/assets/img/icon.png" width="34" height="34" alt="">
         </picture>
         Stux.Games <span class="brand-sub">Games</span>
       </a>
@@ -60,7 +60,23 @@
       </div>
 
       <h3 class="subhead">Featured</h3>
-      <div class="project-grid">
+      <div class="project-grid two-up">
+
+        <article class="project-card" data-monitor="stux-games:stux-games">
+          <div class="project-top">
+            <img class="project-icon only-dark" src="/assets/img/icon-light.png" width="64" height="64" alt="Stux.Games icon" loading="lazy"><img class="project-icon only-light" src="/assets/img/icon.png" width="64" height="64" alt="Stux.Games icon" loading="lazy">
+            <div>
+              <h3>Stux.Games</h3>
+              <div class="project-tagline">Made to be played.</div>
+            </div>
+          </div>
+          <span class="badge-status live" hidden></span>
+          <p class="desc">The studio itself: games, and the open-source backend tools behind them, from multiplayer titles to the server lists and server managers that keep them running.</p>
+          <div class="project-links">
+            <a href="https://stux.games" target="_blank" rel="noopener">Website</a>
+            <a href="mailto:hello@stux.games">Get in touch</a>
+          </div>
+        </article>
 
         <article class="project-card" data-monitor="stux-games:*">
           <div class="project-top">
@@ -85,7 +101,7 @@
 
         <article data-state="soon" class="project-card">
           <div class="project-top">
-            <img class="project-icon" src="/assets/img/icon.png" width="44" height="44" alt="Flappie Race icon" loading="lazy">
+            <img class="project-icon only-dark" src="/assets/img/icon-light.png" width="44" height="44" alt="Flappie Race icon" loading="lazy"><img class="project-icon only-light" src="/assets/img/icon.png" width="44" height="44" alt="Flappie Race icon" loading="lazy">
             <div>
               <h3>Flappie Race</h3>
               <div class="project-tagline">Open source, made with Godot</div>
@@ -103,7 +119,7 @@
 
         <article data-state="soon" class="project-card">
           <div class="project-top">
-            <img class="project-icon" src="/assets/img/icon.png" width="44" height="44" alt="MultiPong icon" loading="lazy">
+            <img class="project-icon only-dark" src="/assets/img/icon-light.png" width="44" height="44" alt="MultiPong icon" loading="lazy"><img class="project-icon only-light" src="/assets/img/icon.png" width="44" height="44" alt="MultiPong icon" loading="lazy">
             <div>
               <h3>MultiPong</h3>
               <div class="project-tagline">Pong, with friends</div>
@@ -121,7 +137,7 @@
 
         <article data-state="template" class="project-card">
           <div class="project-top">
-            <img class="project-icon" src="/assets/img/icon.png" width="44" height="44" alt="Gamepage icon" loading="lazy">
+            <img class="project-icon only-dark" src="/assets/img/icon-light.png" width="44" height="44" alt="Gamepage icon" loading="lazy"><img class="project-icon only-light" src="/assets/img/icon.png" width="44" height="44" alt="Gamepage icon" loading="lazy">
             <div>
               <h3>Gamepage</h3>
               <div class="project-tagline">Every game starts here</div>
@@ -143,7 +159,7 @@
 
         <article class="project-card">
           <div class="project-top">
-            <img class="project-icon" src="/assets/img/icon.png" width="44" height="44" alt="GameServerList icon" loading="lazy">
+            <img class="project-icon only-dark" src="/assets/img/icon-light.png" width="44" height="44" alt="GameServerList icon" loading="lazy"><img class="project-icon only-light" src="/assets/img/icon.png" width="44" height="44" alt="GameServerList icon" loading="lazy">
             <div>
               <h3>GameServer<wbr>List</h3>
               <div class="project-tagline">The in-game server browser API</div>
@@ -159,7 +175,7 @@
 
         <article class="project-card">
           <div class="project-top">
-            <img class="project-icon" src="/assets/img/icon.png" width="44" height="44" alt="GameServerManager icon" loading="lazy">
+            <img class="project-icon only-dark" src="/assets/img/icon-light.png" width="44" height="44" alt="GameServerManager icon" loading="lazy"><img class="project-icon only-light" src="/assets/img/icon.png" width="44" height="44" alt="GameServerManager icon" loading="lazy">
             <div>
               <h3>GameServer<wbr>Manager</h3>
               <div class="project-tagline">Spin up a server per match</div>
@@ -175,7 +191,7 @@
 
         <article class="project-card">
           <div class="project-top">
-            <img class="project-icon" src="/assets/img/icon.png" width="44" height="44" alt="FlappieRaceBackend icon" loading="lazy">
+            <img class="project-icon only-dark" src="/assets/img/icon-light.png" width="44" height="44" alt="FlappieRaceBackend icon" loading="lazy"><img class="project-icon only-light" src="/assets/img/icon.png" width="44" height="44" alt="FlappieRaceBackend icon" loading="lazy">
             <div>
               <h3>FlappieRace<wbr>Backend</h3>
               <div class="project-tagline">Flappie Race's servers, in one compose file</div>

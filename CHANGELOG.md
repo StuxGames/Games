@@ -5,6 +5,16 @@ All notable changes to Stux.Games Games are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).
 
+## v1.1.0
+
+### Added
+
+- Stux.Games itself is listed first under Featured, ahead of Status, with a live status badge and links to stux.games and a way to get in touch
+
+### Fixed
+
+- The dark theme showed the deep gold Stux.Games icon (made for light backgrounds), which looked muddy; it now shows the bright icon on dark and the deep one on light, in the header and on every card
+
 ## v1.0.1
 
 ### Fixed
