@@ -3,7 +3,24 @@
 All notable changes to Stux.Games Games are documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).
+and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
+
+## v26.10.23
+
+### Added
+
+- A Discord link preview: every page except the 404 and the old `/changelog/` redirect carries a `discord:component-embed` block in its `<head>` (the Open Graph fallback is unchanged), with the home page showing what the site is, the key facts and links to the games and live status
+- A full favicon set at the site root: `favicon.ico` (16, 32 and 48 px), an opaque `apple-touch-icon.png`, and `site.webmanifest` with 192 px, 512 px and maskable icons, linked from every page's `<head>`
+- `scripts/build-head.js` writes and checks those `<head>` blocks (`node scripts/build-head.js`, or `--check` in CI)
+- `tests/changelog.test.js` and `tests/discord-embed.test.js`, run by CI: the changelog page reads Date Version headings in the fixed section order, and every embed is valid, under 3,000 bytes and safely escaped
+- `tests/version.sh`, which checks that `VERSION.md` is a valid Date Version, a real calendar date not in the future, and the same as the newest entry in this changelog
+
+### Changed
+
+- Switched from Semantic Versioning to [Date Versioning](https://datevers.ing): releases are numbered by their UTC release date as `YY.MM.DD`, with `-1`, `-2`… for later releases the same day. This release follows v1.2.0
+- `commit.sh` and `commit.bat` refuse a `VERSION.md` that isn't a valid Date Version or is dated in the future (UTC), and warn when it's dated before today
+- `README.md` and `CONTRIBUTING.md` describe Date Versioning and the release steps
+- CI checks `VERSION.md` as a Date Version and runs the new tests; the dev server serves `.webmanifest` with the right type
 
 ## v1.2.0
 
