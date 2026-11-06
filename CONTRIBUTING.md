@@ -39,8 +39,10 @@ a single dependency-free Node script; the only requirement is having Node itself
   existing header/footer block when adding a page rather than introducing a templating system.
 - `assets/js/dev-mode.js` is the production default (`DEV_MODE = false`), committed as-is.
   `dev-server.js` intercepts that one path locally and serves a generated version instead.
-- **Game icons** go in `assets/img/games/` (resized to 128 × 128). Until a game has its own icon,
-  its card uses the Stux.Games icon (`assets/img/icon.png`).
+- **Game icons** go in `assets/img/games/` (resized to 128 × 128). Until a game or tool has an icon of its own,
+  it gets a badge-style icon (the Stux.Games mark on a round avatar, with a badge saying what it is) from
+  `python -I scripts/badge-icons.py stux-games assets/img/icon-light.png assets/img/games`; add a glyph and file
+  name there for a new one. Never reuse the plain Stux.Games icon or another card's icon (needs Pillow).
 - **Only a few things load from elsewhere**, all Stux.Games' own: live status from
   `raw.githubusercontent.com/StuxGames/Status`, and the logo from `global.media.stux.games`. SeasonalOverlaysLibrary loads from
   `https://seasonaloverlayslibrary.stuxapis.net` (StuxAPIs), and the hero credits it. If you add another external
@@ -103,3 +105,4 @@ This project uses [Date Versioning](https://datevers.ing). To release:
 - Check both the dev-mode banner (default) and `--no-dev-mode` if you touched `dev-server.js` or
   `assets/js/dev-mode.js`
 - Only link a repository if it is public: no "Repository" link on a card for a private or missing repo. Run `scripts/check-repo-links.sh` (needs `gh`) to list linked repos that are not public
+- Give every card its full name, in its heading and its icon's alt text ("Stux.Games Status", not "Status"; "Stux.Games Gamepage", not "Gamepage"), and its own icon

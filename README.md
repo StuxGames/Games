@@ -31,7 +31,7 @@ PRESS START, and cartridge-notched cards.
 | Stux.Games Status | Live status and uptime history of Stux.Games and its sites | [status.stux.games](https://status.stux.games) | [StuxGames/Status](https://github.com/StuxGames/Status) |
 | Flappie Race | Multiplayer flappy-style racing game, built in Godot (Coming soon) | [gamepage.stux.games](https://gamepage.stux.games) | [StuxGames/FlappieRace](https://github.com/StuxGames/FlappieRace) |
 | MultiPong | Pong rebuilt for playing other people online (Coming soon) | [gamepage.stux.games](https://gamepage.stux.games) | [StuxGames/MultiPong](https://github.com/StuxGames/MultiPong) |
-| Gamepage | The placeholder page a game shows until its own page is built (Template) | [gamepage.stux.games](https://gamepage.stux.games) | [StuxGames/gamepage](https://github.com/StuxGames/gamepage) |
+| Stux.Games Gamepage | The placeholder page a game shows until its own page is built (Template) | [gamepage.stux.games](https://gamepage.stux.games) | [StuxGames/gamepage](https://github.com/StuxGames/gamepage) |
 | GameServerList | Game server list API for in-game server browsers (Rust, Axum) | - | [StuxGames/GameServerList](https://github.com/StuxGames/GameServerList) |
 | GameServerManager | Game server manager API, one Docker container per server (Python, FastAPI) | - | [StuxGames/GameServerManager](https://github.com/StuxGames/GameServerManager) |
 | FlappieRaceBackend | Flappie Race's server list, server manager, Watchtower and Nginx proxy, via Docker Compose | - | [StuxGames/FlappieRaceBackend](https://github.com/StuxGames/FlappieRaceBackend) |
