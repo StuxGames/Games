@@ -5,6 +5,25 @@ All notable changes to Stux.Games Games are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
 
+## v26.11.06
+
+### Added
+
+- `scripts/badge-icons.py` (copied from StuxGroup/Services, originally TheRidgwells/Projects) builds badge-style icons in
+  Stux.Games' amber: the Stux.Games mark on a round avatar, with a badge in the corner saying what the game or tool is
+
+### Changed
+
+- **Every card uses its full name, with its own icon.** "Status" is now Stux.Games Status, with a heartbeat badge, and
+  "Gamepage" is now Stux.Games Gamepage, with a handheld console badge. Flappie Race (race flag), MultiPong (paddles and
+  ball), GameServerList (list), GameServerManager (server rack) and FlappieRaceBackend (stack) each get their own badge
+  instead of the shared Stux.Games icon. Each icon's alt text uses the same full name
+- `CONTRIBUTING.md` and the README table describe the full-name and badge-icon rules
+
+### Removed
+
+- `assets/img/games/status.svg`, replaced by the Stux.Games Status badge icon
+
 ## v26.10.23
 
 ### Added
