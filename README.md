@@ -15,7 +15,8 @@ PRESS START, and cartridge-notched cards.
 - Plain HTML, CSS and JavaScript: no framework, no bundler, no dependencies to install
 - Dark and light themes, following your system preference, with the matching Stux.Games logo for each
 - **Live status** on cards, read from [status.stux.games](https://status.stux.games)
-  (`StuxGames/Status`, powered by [GitHup](https://githup.stux.group))
+  (`StuxGames/Status`, powered by [GitHup](https://githup.stux.group)), and in the hero's eyebrow, which
+  shows the overall status (All operational, Degraded, Partial outage or Major outage) and links to the status page
 - **Seasonal overlays** from [SeasonalOverlaysLibrary](https://seasonaloverlayslibrary.stuxapis.net)
   (StuxAPIs): today's preset plays once per visit (never with reduced motion), and the hero button replays it
 - Deployed to [GitHub Pages](https://pages.github.com/) by `.github/workflows/pages.yml`

@@ -72,6 +72,19 @@ Games with `data-state="template"`. Each game or tool card carries a `.player-ta
    class and `data-state="discontinued"`, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
 6. Update the hero's game and tool counts if they changed
 
+## Hero status eyebrow
+
+The pill above the hero headline is a live status badge: an `<a class="eyebrow">` linking to status.stux.games,
+with `data-status-eyebrow="stux-games:*"` (the status page's overall status; `<source>:<slug>` would show one
+monitor). Inside it, `.eyebrow-label` holds "Stux.Games" and `.eyebrow-state` starts `hidden`.
+
+`main.js` fills it from the same `summary.json` fetch as the card badges, so there is no extra request. Once loaded it
+shows only the status: All operational, Degraded, Partial outage or Major outage (Online / Degraded / Offline for one
+monitor), hides the label, adds the `up`, `degraded` or `down` class and sets the title. If the fetch fails it stays
+the plain "Stux.Games" eyebrow. The CSS keeps the eyebrow's size, padding and pill shape and takes the status badge
+colours (`--ok`, `--warn`, `--bad`) and a 7px dot that pulses when up, but not with `prefers-reduced-motion`. Check
+dark, light and an outage state after changing it.
+
 ## Seasonal overlays
 
 `main.js` asks SeasonalOverlaysLibrary for today's preset from its calendar. It plays once per
