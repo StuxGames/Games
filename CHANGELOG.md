@@ -5,6 +5,16 @@ All notable changes to Stux.Games Games are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
 
+## v26.11.07
+
+### Changed
+
+- **The hero eyebrow is a live status badge.** It links to status.stux.games and, once the status loads, shows only
+  the overall status (All operational, Degraded, Partial outage or Major outage) in the status badge colours, with a
+  dot that pulses when everything is up (not with reduced motion). It reuses the card badges' `summary.json` fetch,
+  and stays the plain "Stux.Games" eyebrow if the status can't load. README and CONTRIBUTING describe it
+- The live status code parses `data-monitor` and `data-status-eyebrow` with one shared helper
+
 ## v26.11.06-1
 
 ### Added
