@@ -5,6 +5,14 @@ All notable changes to Stux.Games Games are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
 
+## v26.11.08
+
+### Changed
+
+- **Status checks are described as "checked regularly", not "every 5 minutes".** GitHub runs the status schedule
+  best-effort, often much less often, so the hero stat now shows the 90 days of uptime history instead of "5 min
+  between status checks", and the status card, status band, live band text and Discord embed say "checked regularly"
+
 ## v26.11.07
 
 ### Changed
