@@ -58,7 +58,7 @@ function pageEmbed(route, title, desc) {
       section("# [" + md(SITE_NAME) + "](" + url + ")\n**Made to be played.**\n" +
         "Every Stux.Games game and the open-source server tools behind them, each with its own repository and live status."),
       { type: 14 },
-      text("2 games · 3 open-source server tools · status checked every 5 minutes"),
+      text("2 games · 3 open-source server tools · status checked regularly"),
       buttons({ "Browse games": url + "#games", "Live status": "https://status.stux.games", "Stux.Games": "https://stux.games" }),
     ]);
   }
