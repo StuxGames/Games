@@ -5,6 +5,13 @@ All notable changes to Stux.Games Games are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
 
+## v26.11.13
+
+### Changed
+
+- The imprint gives Stux Group Ltd's new registered office, 124 City Road, London, EC1V 2NX, England, United Kingdom. The company
+  number (13160574) and "registered in England and Wales" are unchanged
+
 ## v26.11.08
 
 ### Changed
