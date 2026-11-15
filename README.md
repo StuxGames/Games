@@ -30,6 +30,7 @@ PRESS START, and cartridge-notched cards.
 |---|---|---|---|
 | Stux.Games | The studio itself: games and the open-source tools behind them | [stux.games](https://stux.games) | private |
 | Stux.Games Status | Live status and uptime history of Stux.Games and its sites | [status.stux.games](https://status.stux.games) | [StuxGames/Status](https://github.com/StuxGames/Status) |
+| Purrxel Flow | A cosy snake-cat puzzle game: feed the cats, clear the pixel art. Free in your browser | [purrxel-flow.stux.games](https://purrxel-flow.stux.games) | private |
 | Flappie Race | Multiplayer flappy-style racing game, built in Godot (Coming soon) | [gamepage.stux.games](https://gamepage.stux.games) | [StuxGames/FlappieRace](https://github.com/StuxGames/FlappieRace) |
 | MultiPong | Pong rebuilt for playing other people online (Coming soon) | [gamepage.stux.games](https://gamepage.stux.games) | [StuxGames/MultiPong](https://github.com/StuxGames/MultiPong) |
 | Stux.Games Gamepage | The placeholder page a game shows until its own page is built (Template) | [gamepage.stux.games](https://gamepage.stux.games) | [StuxGames/gamepage](https://github.com/StuxGames/gamepage) |
