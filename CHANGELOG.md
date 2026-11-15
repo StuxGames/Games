@@ -5,6 +5,15 @@ All notable changes to Stux.Games Games are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/).
 
+## v26.11.15
+
+### Added
+
+- `dev-server.sh`/`.bat`/`dev-server.js` take `--lan`: it listens on all interfaces (`0.0.0.0`) instead of `127.0.0.1`, so phones and
+  other devices on the local network can open the dev server, and prints one URL per IPv4 address (usually the
+  `192.168.x.x` one) with a firewall hint. Without it the server stays on `127.0.0.1`. README and CONTRIBUTING
+  describe it
+
 ## v26.11.13
 
 ### Changed

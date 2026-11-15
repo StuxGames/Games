@@ -22,6 +22,10 @@ No install step: there's no `package.json`, no dependencies, nothing to build. `
 a single dependency-free Node script; the only requirement is having Node itself installed. Pass
 `--no-dev-mode` to test the site as it behaves in production (no dev banner).
 
+`--lan` listens on all interfaces (`0.0.0.0`) instead of `127.0.0.1`, so a phone or another
+device on your network can open it: it prints one URL per IPv4 address (usually the
+`192.168.x.x` one). Allow Node through the firewall if asked.
+
 ## Project conventions
 
 - **Plain HTML/CSS/JS, no framework, no build step.** Every page is a real `.html` file: no
