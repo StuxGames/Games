@@ -22,6 +22,10 @@ No install step: there's no `package.json`, no dependencies, nothing to build. `
 a single dependency-free Node script; the only requirement is having Node itself installed. Pass
 `--no-dev-mode` to test the site as it behaves in production (no dev banner).
 
+`--lan` listens on all interfaces (`0.0.0.0`) instead of `127.0.0.1`, so a phone or another
+device on your network can open it: it prints one URL per IPv4 address (usually the
+`192.168.x.x` one). Allow Node through the firewall if asked.
+
 ## Project conventions
 
 - **Plain HTML/CSS/JS, no framework, no build step.** Every page is a real `.html` file: no
@@ -102,11 +106,12 @@ each its own folder with an `index.html`, linked from the **Boring Legal Stuff**
 
 The favicon tags and the Discord embed in every page's `<head>` are generated: run `node scripts/build-head.js` after adding a page or changing a page's title or description. Don't edit the `head-icons` / `head-discord` blocks by hand. Run `node tests/changelog.test.js` and `node tests/discord-embed.test.js` before committing.
 
-## Branches
+## Branches and going live
 
-- Work on `test`, or on a feature branch off it. Never push to `main`
-- Changes reach `main` only through a pull request from `test` into `main`, which needs CI to pass and is reviewed and merged by Leo
-- Merging into `main` deploys games.stux.games to GitHub Pages; release commits and tags are made on `test` (`git push origin test --tags`) and go live when the pull request is merged
+- Work and releases happen on `test`, or on a feature branch merged back into it. The commit scripts refuse to run on `staging` or `main`; push a release with `git push origin test --tags`
+- `staging` is pre-production. It changes only through a merged pull request from `test` (`gh pr create --base staging --head test`). There's no staging deployment: a release waits there, checked, before going live
+- `main` is live. It changes only through a merged pull request from `staging` (`gh pr create --base main --head staging`). Merging into `main` deploys games.stux.games to GitHub Pages
+- Nothing is pushed straight to `staging` or `main`. Pull requests need CI to pass, and Leo merges them
 
 ## Versioning
 

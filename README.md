@@ -48,17 +48,19 @@ of precedence), otherwise a live Online / Degraded / Offline badge when it has a
 ```
 ./dev-server.sh          # http://127.0.0.1:8080, DEV_MODE forced on
 ./dev-server.sh 3000 --no-dev-mode
+./dev-server.sh --lan    # also reachable from phones on your network
 ```
 
 On Windows, use `dev-server.bat` instead. No `npm install` needed: the dev server is a single
-dependency-free Node script (`dev-server.js`); Node just needs to be installed. See
+dependency-free Node script (`dev-server.js`); Node just needs to be installed. `--lan` prints
+the addresses to open on the other device. See
 [CONTRIBUTING.md](CONTRIBUTING.md) for more.
 
 ## Versioning
 
 This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.10.23`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release and [CONTRIBUTING.md](CONTRIBUTING.md) for the release steps. Pushing the `vYY.MM.DD` tag makes the release workflow publish a GitHub Release from the matching changelog section.
 
-Releases are made on the `test` branch and go live when its pull request into `main` is merged; see [CONTRIBUTING.md](CONTRIBUTING.md#branches).
+Releases are made on the `test` branch, go to `staging` through a pull request, and go live when the pull request from `staging` into `main` is merged; see [CONTRIBUTING.md](CONTRIBUTING.md#branches-and-going-live).
 
 ## License
 
